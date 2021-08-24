@@ -258,7 +258,7 @@ namespace Certify.CLI
             if (jsonArgIndex != -1)
             {
                 // if we have a file argument, go ahead an export the list
-                if (args.Length >= (jsonArgIndex + 1) + 1)
+                if (args.Length > (jsonArgIndex + 1))
                 {
                     var pathArg = args[jsonArgIndex + 1];
 
